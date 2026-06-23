@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Agrinho 2026</title>
+<title>Agrinho 2026 - O Campo que Alimenta o Futuro</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,8 +31,8 @@ body{
 
 nav{
     position:fixed;
-    width:100%;
     top:0;
+    width:100%;
     z-index:1000;
 
     display:flex;
@@ -58,9 +58,14 @@ nav ul{
 }
 
 nav a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    opacity:.8;
 }
 
 /* HERO */
@@ -85,7 +90,7 @@ nav a{
 }
 
 .hero-content{
-    max-width:800px;
+    max-width:850px;
     color:white;
 }
 
@@ -95,6 +100,7 @@ nav a{
     padding:10px 20px;
     border-radius:50px;
     margin-bottom:25px;
+    font-size:.9rem;
 }
 
 .hero h1{
@@ -110,9 +116,8 @@ nav a{
 }
 
 .btn{
-    margin-top:35px;
-
     display:inline-block;
+    margin-top:35px;
 
     background:#2e7d32;
     color:white;
@@ -136,17 +141,18 @@ section{
 }
 
 .title{
-    font-size:3rem;
     text-align:center;
+    font-size:3rem;
     margin-bottom:20px;
 }
 
 .subtitle{
     text-align:center;
     color:#666;
-    max-width:800px;
+    max-width:900px;
     margin:auto;
     margin-bottom:60px;
+    line-height:1.8;
 }
 
 /* CARDS */
@@ -173,31 +179,13 @@ section{
 }
 
 .card h3{
+    color:#2e7d32;
     margin-bottom:15px;
-    color:#2e7d32;
 }
 
-/* DASHBOARD */
-
-.dashboard{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.metric{
-    background:white;
-    border-left:5px solid #2e7d32;
-
-    padding:30px;
-    border-radius:15px;
-
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-.metric h2{
-    color:#2e7d32;
-    font-size:3rem;
+.card p{
+    line-height:1.8;
+    color:#555;
 }
 
 /* PARALLAX */
@@ -220,13 +208,43 @@ section{
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
 
+    text-align:center;
     color:white;
 }
 
 .parallax h2{
     font-size:4rem;
+    max-width:900px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.metric{
+    background:white;
+
+    border-left:5px solid #2e7d32;
+
+    padding:30px;
+    border-radius:15px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.metric h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.metric p{
+    line-height:1.8;
+    color:#555;
 }
 
 /* FOOTER */
@@ -235,10 +253,19 @@ footer{
     background:#111;
     color:white;
     text-align:center;
-    padding:40px;
+    padding:50px 20px;
+}
+
+footer p{
+    margin-top:10px;
+    color:#bbb;
 }
 
 @media(max-width:768px){
+
+    nav ul{
+        display:none;
+    }
 
     .hero h1{
         font-size:3rem;
@@ -249,11 +276,11 @@ footer{
     }
 
     .parallax h2{
-        font-size:2.2rem;
+        font-size:2rem;
     }
 
-    nav ul{
-        display:none;
+    .hero p{
+        font-size:1rem;
     }
 }
 
@@ -278,18 +305,17 @@ footer{
     <div class="hero-content">
 
         <div class="badge">
-            AGRINHO • CAMPO • FUTURO
+            AGRINHO • CAMPO • TECNOLOGIA • FUTURO
         </div>
 
-        <h1>
-            O Campo que Alimenta o Futuro
-        </h1>
+        <h1>O Campo que Alimenta o Futuro</h1>
 
         <p>
-            A agricultura moderna combina inovação,
-            sustentabilidade e tecnologia para produzir
-            alimentos, preservar recursos naturais e garantir
-            qualidade de vida para as próximas gerações.
+            A agricultura é responsável pela produção de alimentos,
+            fibras e matérias-primas essenciais para a sociedade.
+            Com o apoio da tecnologia e de práticas sustentáveis,
+            o campo desempenha um papel fundamental no desenvolvimento
+            econômico e na segurança alimentar.
         </p>
 
         <a href="#sobre" class="btn">
@@ -305,34 +331,46 @@ footer{
     <h2 class="title">Conexão Campo e Cidade</h2>
 
     <p class="subtitle">
-        Tudo o que chega à mesa começa no campo. A tecnologia
-        aproxima produtores, consumidores e o meio ambiente.
+        Tudo o que chega à mesa começa no campo. A produção agrícola
+        fornece alimentos, matérias-primas e contribui para o bem-estar
+        da população, conectando áreas rurais e urbanas.
     </p>
 
     <div class="grid">
 
         <div class="card">
             <h3>Produção Responsável</h3>
+
             <p>
-                Técnicas modernas aumentam a produtividade
-                reduzindo impactos ambientais.
+                O uso de técnicas como plantio direto,
+                rotação de culturas e manejo adequado do solo
+                contribui para a conservação dos recursos naturais
+                e para uma produção agrícola mais sustentável.
             </p>
+
         </div>
 
         <div class="card">
             <h3>Segurança Alimentar</h3>
+
             <p>
-                A agricultura garante alimentos de qualidade
-                para milhões de pessoas.
+                A agricultura fornece alimentos para a população
+                e é uma das bases da segurança alimentar,
+                garantindo o abastecimento de mercados,
+                escolas, hospitais e residências.
             </p>
+
         </div>
 
         <div class="card">
             <h3>Inovação Rural</h3>
+
             <p>
-                Máquinas inteligentes, drones e sensores
-                revolucionam o campo.
+                Tecnologias como GPS, drones, sensores e máquinas
+                agrícolas modernas auxiliam produtores no
+                monitoramento das lavouras e na tomada de decisões.
             </p>
+
         </div>
 
     </div>
@@ -342,7 +380,7 @@ footer{
 <div class="parallax">
 
     <h2>
-        Tecnologia e Sustentabilidade
+        Tecnologia e Sustentabilidade Transformando o Campo
     </h2>
 
 </div>
@@ -352,30 +390,57 @@ footer{
     <h2 class="title">Agricultura 4.0</h2>
 
     <p class="subtitle">
-        Dados, conectividade e inteligência artificial ajudam
-        produtores a tomar decisões mais precisas.
+        A agricultura moderna utiliza ferramentas digitais para
+        aumentar a eficiência das atividades rurais e melhorar
+        a gestão das propriedades.
     </p>
 
     <div class="dashboard">
 
         <div class="metric">
-            <h2>95%</h2>
-            <p>Precisão no monitoramento das lavouras</p>
+
+            <h3>GPS Agrícola</h3>
+
+            <p>
+                Utilizado para orientar máquinas com maior precisão
+                durante operações agrícolas, auxiliando no plantio,
+                pulverização e colheita.
+            </p>
+
         </div>
 
         <div class="metric">
-            <h2>40%</h2>
-            <p>Redução do desperdício de água</p>
+
+            <h3>Drones</h3>
+
+            <p>
+                Empregados no monitoramento de lavouras,
+                identificação de falhas e acompanhamento
+                do desenvolvimento das culturas.
+            </p>
+
         </div>
 
         <div class="metric">
-            <h2>24h</h2>
-            <p>Monitoramento contínuo por sensores</p>
+
+            <h3>Sensores</h3>
+
+            <p>
+                Permitem coletar informações sobre solo,
+                clima e plantas para auxiliar o manejo agrícola.
+            </p>
+
         </div>
 
         <div class="metric">
-            <h2>100%</h2>
-            <p>Rastreabilidade da produção</p>
+
+            <h3>Conectividade</h3>
+
+            <p>
+                Facilita o acesso a dados e tecnologias
+                que apoiam a gestão das propriedades rurais.
+            </p>
+
         </div>
 
     </div>
@@ -387,31 +452,44 @@ footer{
     <h2 class="title">Sustentabilidade</h2>
 
     <p class="subtitle">
-        Produzir mais, preservando recursos naturais e
-        garantindo um futuro melhor para todos.
+        Produzir alimentos e matérias-primas preservando os recursos
+        naturais é um dos grandes desafios da agricultura atual.
     </p>
 
     <div class="grid">
 
         <div class="card">
+
             <h3>Preservação Ambiental</h3>
+
             <p>
-                Conservação do solo, da água e da biodiversidade.
+                A legislação brasileira prevê a proteção de áreas
+                como reservas legais e áreas de preservação permanente
+                em propriedades rurais.
             </p>
+
         </div>
 
         <div class="card">
-            <h3>Energia Renovável</h3>
+
+            <h3>Conservação do Solo</h3>
+
             <p>
-                Uso crescente de fontes limpas na produção rural.
+                Práticas agrícolas adequadas ajudam a reduzir
+                a erosão e preservar a fertilidade do solo.
             </p>
+
         </div>
 
         <div class="card">
-            <h3>Futuro Sustentável</h3>
+
+            <h3>Uso Racional da Água</h3>
+
             <p>
-                Equilíbrio entre desenvolvimento econômico e meio ambiente.
+                Sistemas de irrigação eficientes contribuem para
+                o aproveitamento adequado dos recursos hídricos.
             </p>
+
         </div>
 
     </div>
@@ -421,7 +499,10 @@ footer{
 <footer>
 
     <h3>AGRINHO 2026</h3>
-    <p>Cultivando conhecimento, inovação e sustentabilidade.</p>
+
+    <p>
+        Cultivando conhecimento, responsabilidade e inovação para o futuro.
+    </p>
 
 </footer>
 
